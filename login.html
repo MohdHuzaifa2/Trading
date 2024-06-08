@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Probo - Online Web Trading</title>
+  <meta name="description" content="Trades on your Opinion with over 2 crore users. Download the Probo app and Earn Profit by your Opinions. Gyan Jaha, Probo Waha. Select a Event &gt; Trade on Your Opinon &gt; Earn Profits" />
+  <meta name="keywords" content="Probo, probo app, probo app download, probo apk download, probo apk, Opinion Trading, Trade on Opinion, Prediction Earning, Predict &amp; Earn" />
+
+  <link rel="shortcut icon" href="./assets/img/favicon.ico">
+  <link rel="favicon" href="./assets/img/favicon.ico">
+  <link rel="icon" type="image/x-icon" sizes="32x32" href="./assets/img/favicon.ico">
+  <link rel="icon" type="image/x-icon" sizes="16x16" href="./assets/img/favicon.ico">
+
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+<body>
+    <div class="mobile-layout">
+      <form action="./otp.html">
+        <div class="form-content">
+          <h1 class="title-large">Enter your mobile number</h1>
+          <div class="title-small">We'll send you an OTP</div>
+          <div class="phone-input-container">
+            <input type="tel" class="phone" name="phone" placeholder="Phone number" minlength="10" maxlength="10">
+            <span class="input-prefix">+91</span>
+          </div>
+          <div class="error-msg">Phone number is required</div>
+        </div>
+        <div class="form-tnc">
+          By continuing, you accept that you are 18+ years of age & agree to the <a href="https://probo.in/terms-and-conditions">Terms and Conditions</a>
+        </div>
+        <div class="form-actions">
+          <button class="btn" type="submit">Continue</button>
+        </div>
+      </form>
+    </div>
+    <script>
+      let btn = document.querySelector('.btn');
+      let input = document.querySelector('.phone');
+      let error = document.querySelector('.error-msg');
+
+      btn.onclick = function() {
+        if (input.value == '') {
+          error.classList.add('active');
+          input.classList.add("error");
+        }
+      }
+
+      let form = document.querySelector("form");
+
+      // form.onsubmit = function(e) {
+      //   e.preventDefault();
+      // }
+    </script>
+</body>
+</html>
